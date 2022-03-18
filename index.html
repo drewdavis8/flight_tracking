@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Flight Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://www.planeflighttracker.com/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+
+      <div class="hero text-center">
+            <h1>Anywhere but Vegas</h1>
+            <p>Fly on the Fly</p>
+            <p> Seriously, get outta here.</p>
+      </div>
+<div class="wrapper">
+          <!-- <nav class="navbar navbar-default"> -->
+                <div class="container-fluid">
+                      <div class="navbar-header">
+                        <div><iframe src="http://embed.flightaware.com/commercial/integrated/web/delay_map.rvt" width="840" height="610" frameborder="0" marginheight="10" marginwidth="10"></iframe><br />
+                              <div style="font-size: x-small;">
+                                    <a href="https://flightaware.com/">Flight Tracker</a></div></div>
+                      </div>
+                </div>
+          </nav>
+
+         
+
+  <div class="container">
+
+      <div class="row margin-top-50">
+              <div class="col-md-4">
+                    <aside class="filters">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Which Airport?</div>
+                                  <div class="panel-body">
+
+                                          <form>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                          <select type="button" class="form-control btn btn-success" data-toggle="dropdown">
+                                                              <option href="#" class="dropdown-item">City</option>
+                                                              <option href="#" class="dropdown-item">State</option>
+                                                              <option href="#" class="dropdown-item">Country</option>
+                                                          </select>
+                                                    </div>
+                                                          <input type="text" id="input" class="form-control" placeholder="enter here">
+                                                </div>
+                                          </form>
+                                        <button id="filter-btn" type="button" class="btn btn-default">Click Here</button>
+                                  </div>
+                            </div>
+                      </aside>
+                  </div>
+        <div class="row margin-top-50">
+        <div class="col-md-10">
+    </br>
+                <!-- <div id="table-area" class="">
+                        <table id="ufo-table" class="table table-striped">
+                                <thead>
+                                        <tr>
+                                                <th class="table-head">Date</th>
+                                                <th class="table-head">City</th>
+                                                <th class="table-head">State</th>
+                                                <th class="table-head">Country</th>
+                                                <th class="table-head">Shape</th>
+                                                <th class="table-head">Duration</th>
+                                                <th class="table-head">Comments</th>
+                                        </tr> -->
+                                </thead>
+                                <tbody></tbody>
+                        </table>
+                </div>
+        </div>
+        </div>
+  <footer class="footer">
+      <span class="bottom"> Drew Davis 2022</span>
+  </footer>
+
+        </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/app.js"></script>
+  <script src="static/js/data.js"></script>
+
+</body>
+
+</html>
